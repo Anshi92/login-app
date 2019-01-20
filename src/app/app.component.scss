@@ -1,0 +1,22 @@
+.app-component {
+    background-color: #41845163;
+    height: 100vh;
+}
+
+.status-button {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.logged-in-status {
+    background-color: lightgreen;
+    color: white;
+}
+
+.logged-out-status {
+    background-color: red;
+    color: white;
+}
+    
+    

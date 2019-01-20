@@ -1,0 +1,16 @@
+.logged-user-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .logout-header {
+        font-style: italic;
+        font-size: 4em;
+    }
+
+    .button-logout {
+        width: 150px;
+        height: 30px;
+    }
+}

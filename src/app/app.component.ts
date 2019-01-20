@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LoggedUserService} from './logged-user.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'login-app';
+  status : any;
+
+  constructor(private loggedUserService: LoggedUserService) {
+     this.loggedUserService.currentMessage.subscribe(status => this.status = status);
+  }
+
 }
